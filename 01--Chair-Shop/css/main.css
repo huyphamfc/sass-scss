@@ -10,5 +10,63 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: #495057;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container, .header {
+  max-width: 960px;
+  margin: 6.4rem auto;
+}
+
+.formatImg, .header .header__img {
+  display: block;
+  width: 100%;
+}
+
+.formatParagraph, .header .header__text .header-paragraph {
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+}
+.header .header__text {
+  margin: auto 0;
+}
+.header .header__text .header-heading {
+  font-size: 4.4rem;
+  color: #343a40;
+  margin-bottom: 3.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+}
+.header .header__img {
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.btn, .header .header__text .header-btn {
+  display: inline-block;
+  background-color: #099268;
+  color: #fff;
+}
+
+.btn--large, .header .header__text .header-btn {
+  border-radius: 2.8rem;
+  padding: 1.8rem 3.6rem;
+}
+
+.btn--small {
+  font-size: 1.4rem;
+  border-radius: 1.2rem;
+  padding: 1.4rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,2 +1,10 @@
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
+
 @import "./base/reset";
+
+@import "./abstracts/extends";
+
+@import "./layout/header";
+
+@import "./components/button";

@@ -1,0 +1,16 @@
+@mixin grid($col: 1, $gap: 0) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  gap: $gap;
+}
+
+@mixin roundCorner($border-radius: 0) {
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+@mixin formatHeading($fs-heading: 1rem, $ws-heading: 1rem) {
+  font-size: $fs-heading;
+  color: $color-grey-shade;
+  margin-bottom: $ws-heading;
+}

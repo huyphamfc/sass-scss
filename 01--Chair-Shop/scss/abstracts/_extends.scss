@@ -1,0 +1,14 @@
+.container {
+  max-width: 960px;
+  margin: $ws-layout-padding auto;
+}
+
+.formatImg {
+  display: block;
+  width: 100%;
+}
+
+.formatParagraph {
+  line-height: $line-height-paragraph;
+  margin-bottom: $ws-paragraph-margin;
+}
