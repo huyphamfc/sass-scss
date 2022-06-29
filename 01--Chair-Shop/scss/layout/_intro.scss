@@ -1,0 +1,51 @@
+.intro {
+  @extend .container;
+
+  .intro__heading {
+    @include formatHeading($fs-heading-secondary, $ws-heading-margin-secondary);
+  }
+
+  .intro__items {
+    @include grid(3, 4.8rem);
+
+    .intro-heading-sub {
+      @include formatHeading($fs-heading-tertiary, $ws-heading-margin-tertiary);
+    }
+
+    .intro-paragraph {
+      @extend .formatParagraph;
+    }
+  }
+
+  .intro__testimonial {
+    @include grid(3, 4.8rem);
+    @include roundCorner($border-r-medium);
+    background-color: $color-palette;
+    padding: 2.8rem;
+
+    .intro-img {
+      @extend .formatImg;
+      @include roundCorner($border-r-small);
+    }
+
+    .intro-content {
+      grid-column: 2/-1;
+      margin: auto 0;
+
+      .intro-quote {
+        @include formatHeading(
+          $fs-heading-tertiary,
+          $ws-heading-margin-tertiary
+        );
+        color: $color-grey-tint;
+        font-weight: 700;
+      }
+
+      .intro-detail {
+        @extend .formatParagraph;
+      }
+
+      color: $color-grey-tint;
+    }
+  }
+}

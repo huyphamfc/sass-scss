@@ -14,22 +14,27 @@ body {
   color: #495057;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-.container, .header {
+.container, .intro, .header {
   max-width: 960px;
-  margin: 6.4rem auto;
+  margin: 0 auto;
+  padding: 6.4rem 0;
 }
 
-.formatImg, .header .header__img {
+.formatImg, .intro .intro__testimonial .intro-img, .header .header__img {
   display: block;
   width: 100%;
 }
 
-.formatParagraph, .header .header__text .header-paragraph {
+.formatParagraph, .intro .intro__testimonial .intro-content .intro-detail, .intro .intro__items .intro-paragraph, .header .header__text .header-paragraph {
   line-height: 1.5;
   margin-bottom: 2.4rem;
 }
@@ -54,6 +59,46 @@ a {
   overflow: hidden;
 }
 
+.intro .intro__heading {
+  font-size: 3.6rem;
+  color: #343a40;
+  margin-bottom: 2.8rem;
+}
+.intro .intro__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+.intro .intro__items .intro-heading-sub {
+  font-size: 2.4rem;
+  color: #343a40;
+  margin-bottom: 1.8rem;
+}
+.intro .intro__testimonial {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  background-color: #099268;
+  padding: 2.8rem;
+}
+.intro .intro__testimonial .intro-img {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.intro .intro__testimonial .intro-content {
+  grid-column: 2/-1;
+  margin: auto 0;
+  color: #fff;
+}
+.intro .intro__testimonial .intro-content .intro-quote {
+  font-size: 2.4rem;
+  color: #343a40;
+  margin-bottom: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+}
 .btn, .header .header__text .header-btn {
   display: inline-block;
   background-color: #099268;

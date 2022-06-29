@@ -1,6 +1,8 @@
 // FONT SIZE
 $fs-default: 1.8rem;
 $fs-heading-primary: 4.4rem;
+$fs-heading-secondary: 3.6rem;
+$fs-heading-tertiary: 2.4rem;
 $fs-button-large: 1.8rem;
 $fs-button-small: 1.4rem;
 
@@ -13,6 +15,8 @@ $color-grey-shade: #343a40;
 // WHITE SPACE
 $ws-layout-padding: 6.4rem;
 $ws-heading-margin-primary: 3.2rem;
+$ws-heading-margin-secondary: 2.8rem;
+$ws-heading-margin-tertiary: 1.8rem;
 $ws-paragraph-margin: 2.4rem;
 
 // LINE HEIGHT
@@ -23,6 +27,7 @@ $line-height-paragraph: 1.5;
 $letter-spacing-heading: -0.1rem;
 
 // BORDER RADIUS
+$border-r-small: 0.8rem;
 $border-r-medium: 1.6rem;
 $border-r-btn-large: 2.8rem;
 $border-r-btn-small: 1.2rem;

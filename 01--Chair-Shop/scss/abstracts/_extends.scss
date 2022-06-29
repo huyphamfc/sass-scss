@@ -1,6 +1,7 @@
 .container {
   max-width: 960px;
-  margin: $ws-layout-padding auto;
+  margin: 0 auto;
+  padding: $ws-layout-padding 0;
 }
 
 .formatImg {
