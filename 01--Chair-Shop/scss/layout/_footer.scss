@@ -1,0 +1,13 @@
+.footer {
+  border-bottom: 8px solid $color-palette;
+
+  .footer__paragraph {
+    color: $color-grey-shade;
+    text-align: center;
+    padding: 4.8rem;
+
+    .footer__link {
+      color: $color-palette;
+    }
+  }
+}

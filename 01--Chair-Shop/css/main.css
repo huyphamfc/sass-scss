@@ -131,6 +131,18 @@ a {
   font-weight: 700;
   color: #343a40;
 }
+.footer {
+  border-bottom: 8px solid #099268;
+}
+.footer .footer__paragraph {
+  color: #343a40;
+  text-align: center;
+  padding: 4.8rem;
+}
+.footer .footer__paragraph .footer__link {
+  color: #099268;
+}
+
 .header .header__text .header-btn, .products .products__items .products-item .products-info .products-purchase .products-btn {
   display: inline-block;
   background-color: #099268;
