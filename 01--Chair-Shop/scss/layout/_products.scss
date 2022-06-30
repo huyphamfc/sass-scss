@@ -1,0 +1,50 @@
+.products {
+  @extend %container;
+
+  .products__heading {
+    @include formatHeading($fs-heading-secondary, $ws-heading-margin-secondary);
+  }
+
+  .products__items {
+    @include grid(3, 4.8rem);
+
+    .products-item {
+      @include roundCorner($border-r-medium);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+      .products-img {
+        @extend %formatImg;
+      }
+
+      .products-info {
+        padding: 2.4rem;
+
+        .products-heading-sub {
+          @include formatHeading(
+            $fs-heading-tertiary,
+            $ws-heading-margin-tertiary
+          );
+        }
+
+        .products-describe {
+          @extend %formatParagraph;
+        }
+        .products-purchase {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .products-price {
+            font-weight: 700;
+            color: $color-grey-shade;
+          }
+
+          .products-btn {
+            @extend %btn;
+            @extend %btn--small;
+          }
+        }
+      }
+    }
+  }
+}

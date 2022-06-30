@@ -1,15 +1,15 @@
-.intro, .header {
+.products, .intro, .header {
   max-width: 960px;
   margin: 0 auto;
   padding: 6.4rem 0;
 }
 
-.intro .intro__testimonial .intro-img, .header .header__img {
+.products .products__items .products-item .products-img, .intro .intro__testimonial .intro-img, .header .header__img {
   display: block;
   width: 100%;
 }
 
-.intro .intro__testimonial .intro-content .intro-detail, .intro .intro__items .intro-paragraph, .header .header__text .header-paragraph {
+.products .products__items .products-item .products-info .products-describe, .intro .intro__testimonial .intro-content .intro-detail, .intro .intro__items .intro-paragraph, .header .header__text .header-paragraph {
   line-height: 1.5;
   margin-bottom: 2.4rem;
 }
@@ -99,7 +99,39 @@ a {
   color: #fff;
   font-weight: 700;
 }
-.header .header__text .header-btn {
+.products .products__heading {
+  font-size: 3.6rem;
+  color: #343a40;
+  margin-bottom: 2.8rem;
+}
+.products .products__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+.products .products__items .products-item {
+  border-radius: 1.6rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.products .products__items .products-item .products-info {
+  padding: 2.4rem;
+}
+.products .products__items .products-item .products-info .products-heading-sub {
+  font-size: 2.4rem;
+  color: #343a40;
+  margin-bottom: 1.8rem;
+}
+.products .products__items .products-item .products-info .products-purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .products__items .products-item .products-info .products-purchase .products-price {
+  font-weight: 700;
+  color: #343a40;
+}
+.header .header__text .header-btn, .products .products__items .products-item .products-info .products-purchase .products-btn {
   display: inline-block;
   background-color: #099268;
   color: #fff;
@@ -108,4 +140,10 @@ a {
 .header .header__text .header-btn {
   border-radius: 2.8rem;
   padding: 1.8rem 3.6rem;
+}
+
+.products .products__items .products-item .products-info .products-purchase .products-btn {
+  font-size: 1.4rem;
+  border-radius: 2.4rem;
+  padding: 1.4rem;
 }/*# sourceMappingURL=main.css.map */
