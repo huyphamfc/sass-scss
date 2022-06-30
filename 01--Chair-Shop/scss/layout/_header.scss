@@ -1,5 +1,5 @@
 .header {
-  @extend .container;
+  @extend %container;
   @include grid(2, 4.8rem);
 
   .header__text {
@@ -12,17 +12,17 @@
     }
 
     .header-paragraph {
-      @extend .formatParagraph;
+      @extend %formatParagraph;
     }
 
     .header-btn {
-      @extend .btn;
-      @extend .btn--large;
+      @extend %btn;
+      @extend %btn--large;
     }
   }
 
   .header__img {
-    @extend .formatImg;
+    @extend %formatImg;
     @include roundCorner($border-r-medium);
   }
 }

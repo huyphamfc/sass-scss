@@ -1,5 +1,5 @@
 .intro {
-  @extend .container;
+  @extend %container;
 
   .intro__heading {
     @include formatHeading($fs-heading-secondary, $ws-heading-margin-secondary);
@@ -13,7 +13,7 @@
     }
 
     .intro-paragraph {
-      @extend .formatParagraph;
+      @extend %formatParagraph;
     }
   }
 
@@ -24,7 +24,7 @@
     padding: 2.8rem;
 
     .intro-img {
-      @extend .formatImg;
+      @extend %formatImg;
       @include roundCorner($border-r-small);
     }
 
@@ -42,7 +42,7 @@
       }
 
       .intro-detail {
-        @extend .formatParagraph;
+        @extend %formatParagraph;
       }
 
       color: $color-grey-tint;

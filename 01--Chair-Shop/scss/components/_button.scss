@@ -1,15 +1,15 @@
-.btn {
+%btn {
   display: inline-block;
   background-color: $color-palette;
   color: $color-grey-tint;
 }
 
-.btn--large {
+%btn--large {
   border-radius: $border-r-btn-large;
   padding: $fs-button-large $fs-button-large * 2;
 }
 
-.btn--small {
+%btn--small {
   font-size: $fs-button-small;
   border-radius: $border-r-btn-small;
   padding: $fs-button-small;

@@ -1,3 +1,19 @@
+.intro, .header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6.4rem 0;
+}
+
+.intro .intro__testimonial .intro-img, .header .header__img {
+  display: block;
+  width: 100%;
+}
+
+.intro .intro__testimonial .intro-content .intro-detail, .intro .intro__items .intro-paragraph, .header .header__text .header-paragraph {
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,22 +37,6 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.container, .intro, .header {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 6.4rem 0;
-}
-
-.formatImg, .intro .intro__testimonial .intro-img, .header .header__img {
-  display: block;
-  width: 100%;
-}
-
-.formatParagraph, .intro .intro__testimonial .intro-content .intro-detail, .intro .intro__items .intro-paragraph, .header .header__text .header-paragraph {
-  line-height: 1.5;
-  margin-bottom: 2.4rem;
 }
 
 .header {
@@ -99,19 +99,13 @@ a {
   color: #fff;
   font-weight: 700;
 }
-.btn, .header .header__text .header-btn {
+.header .header__text .header-btn {
   display: inline-block;
   background-color: #099268;
   color: #fff;
 }
 
-.btn--large, .header .header__text .header-btn {
+.header .header__text .header-btn {
   border-radius: 2.8rem;
   padding: 1.8rem 3.6rem;
-}
-
-.btn--small {
-  font-size: 1.4rem;
-  border-radius: 1.2rem;
-  padding: 1.4rem;
 }/*# sourceMappingURL=main.css.map */
