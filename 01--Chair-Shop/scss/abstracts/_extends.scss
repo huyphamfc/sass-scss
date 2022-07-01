@@ -1,15 +1,33 @@
 %container {
   max-width: 960px;
   margin: 0 auto;
-  padding: $ws-layout-padding 0;
+  padding: $pd-y-layout 2.4rem;
 }
 
-%formatImg {
+%styleHeadingPrimary {
+  font-size: $fs-heading-primary;
+  color: $color-grey-shade;
+  margin-bottom: $mg-y-heading-primary;
+}
+
+%styleHeadingSecondary {
+  font-size: $fs-heading-secondary;
+  color: $color-grey-shade;
+  margin-bottom: $mg-y-heading-secondary;
+}
+
+%styleHeadingTertiary {
+  font-size: $fs-heading-tertiary;
+  color: $color-grey-shade;
+  margin-bottom: $mg-y-heading-tertiary;
+}
+
+%styleParagraph {
+  line-height: $line-height-paragraph;
+  margin-bottom: $mg-y-paragraph;
+}
+
+%styleImg {
   display: block;
   width: 100%;
-}
-
-%formatParagraph {
-  line-height: $line-height-paragraph;
-  margin-bottom: $ws-paragraph-margin;
 }
