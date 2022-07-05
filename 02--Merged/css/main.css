@@ -11,5 +11,59 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  color: #495057;
   line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.container, .header__top-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.flex, .header__top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  font-size: 1.8rem;
+}
+
+.header__top {
+  background-color: #292b2c;
+}
+
+.header__top-content {
+  color: #fff;
+  padding: 1.2rem 0;
+}
+.header__top-content .header__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+.header__top-content .header__icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+.header__top-content .header__icon--fb:hover {
+  color: #527dbd;
+}
+.header__top-content .header__icon--tt:hover {
+  color: #1da1f2;
+}
+.header__top-content .header__icon--gg:hover {
+  color: #dd4b39;
+}
+.header__top-content .header__icon--li:hover {
+  color: #0077b5;
 }/*# sourceMappingURL=main.css.map */

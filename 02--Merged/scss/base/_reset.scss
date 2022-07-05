@@ -11,5 +11,24 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: $fs-default;
+  color: $color-gray;
   line-height: $lh-default;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

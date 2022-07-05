@@ -1,0 +1,39 @@
+.header {
+  font-size: $fs-header;
+}
+
+.header__top {
+  background-color: $color-gray-shade;
+}
+
+.header__top-content {
+  @extend .container;
+  @extend .flex;
+
+  color: $color-gray-tint;
+  padding: 1.2rem 0;
+
+  .header__icon {
+    @include styleIcon($fs-icon-small);
+
+    &:not(:last-child) {
+      margin-right: 1.6rem;
+    }
+  }
+
+  .header__icon--fb {
+    @include styleIconHover($color-icon-fb);
+  }
+
+  .header__icon--tt {
+    @include styleIconHover($color-icon-tt);
+  }
+
+  .header__icon--gg {
+    @include styleIconHover($color-icon-gg);
+  }
+
+  .header__icon--li {
+    @include styleIconHover($color-icon-li);
+  }
+}

@@ -1,0 +1,13 @@
+@mixin styleIcon($fs-icon) {
+  width: $fs-icon;
+  height: $fs-icon;
+  line-height: $fs-icon;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+@mixin styleIconHover($color-hover) {
+  &:hover {
+    color: $color-hover;
+  }
+}
