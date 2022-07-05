@@ -1,17 +1,13 @@
-.header {
-  font-size: $fs-header;
-}
-
 .header__top {
   background-color: $color-gray-shade;
+  color: $color-gray-tint;
+  font-size: $fs-default * 1.125;
 }
 
 .header__top-content {
   @extend .container;
   @extend .flex;
-
-  color: $color-gray-tint;
-  padding: 1.2rem 0;
+  @include padding-y(1.2rem);
 
   .header__icon {
     @include styleIcon($fs-icon-small);
@@ -35,5 +31,42 @@
 
   .header__icon--li {
     @include styleIconHover($color-icon-li);
+  }
+}
+
+.header__bottom {
+  @extend .container;
+  @extend .flex;
+  @include padding-y(1.6rem);
+
+  .header__brand {
+    font-weight: 500;
+    font-size: $fs-heading-primary;
+    letter-spacing: $fs-heading-primary * 0.1;
+
+    &::first-letter {
+      font-size: $fs-heading-primary * 1.125;
+      color: $color-palette;
+    }
+  }
+}
+
+.header__nav {
+  @extend .flex;
+
+  font-weight: 700;
+  font-size: $fs-nav;
+  letter-spacing: $fs-nav * 0.1;
+
+  .nav__item {
+    padding: $fs-nav $fs-nav * 1.2;
+  }
+
+  .nav__link {
+    transition: all 0.5s;
+
+    &:hover {
+      color: $color-palette;
+    }
   }
 }

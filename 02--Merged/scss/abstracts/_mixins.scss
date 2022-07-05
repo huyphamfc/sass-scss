@@ -11,3 +11,8 @@
     color: $color-hover;
   }
 }
+
+@mixin padding-y($padding) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}

@@ -1,12 +1,14 @@
 // Font Size
 $fs-default: 1.6rem;
-$fs-header: 1.8rem;
-$fs-icon-small: 2.4rem;
+$fs-heading-primary: $fs-default * 2;
+$fs-nav: $fs-default * 0.875;
+$fs-icon-small: $fs-default * 1.5;
 
 // Line Height
 $lh-default: 1.5;
 
 // Color
+$color-palette: #8710d8;
 $color-gray: #495057;
 $color-gray-tint: #fff;
 $color-gray-shade: #292b2c;
