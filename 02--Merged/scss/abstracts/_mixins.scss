@@ -1,3 +1,22 @@
+@mixin flex($justify-content: space-between, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin padding-y($padding) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+@mixin styleHeadingSecondary($color: $color-gray-tint) {
+  font-weight: 400;
+  font-size: $fs-heading-secondary;
+  letter-spacing: $fs-heading-secondary * 0.1;
+  color: $color;
+  margin-bottom: $fs-heading-secondary * 0.2;
+}
+
 @mixin styleIcon($fs-icon) {
   width: $fs-icon;
   height: $fs-icon;
@@ -10,9 +29,4 @@
   &:hover {
     color: $color-hover;
   }
-}
-
-@mixin padding-y($padding) {
-  padding-top: $padding;
-  padding-bottom: $padding;
 }

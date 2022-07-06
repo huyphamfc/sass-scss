@@ -1,0 +1,52 @@
+.carousel {
+  @include flex(center);
+
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      $color-linear-gradient-img,
+      $color-linear-gradient-img
+    ),
+    url("../img/carousel.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $color-gray-tint;
+  text-align: center;
+}
+
+.carousel__content {
+  @extend .container;
+
+  .carousel__heading {
+    @include styleHeadingSecondary();
+  }
+
+  .carousel__btn {
+    @extend .btn;
+  }
+
+  .carousel__btn--outline {
+    @extend .btn--outline;
+  }
+
+  .carousel__btn--solid {
+    @extend .btn--solid;
+  }
+}
+
+.carousel__dots {
+  @include flex();
+
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+
+  .carousel__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color-gray-tint;
+  }
+}

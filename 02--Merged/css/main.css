@@ -25,16 +25,35 @@ a {
   text-decoration: none;
 }
 
-.container, .header__bottom, .header__top-content {
+.container, .carousel__content, .header__bottom, .header__top-content {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
 
-.flex, .header__nav, .header__bottom, .header__top-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.btn, .carousel__content .carousel__btn {
+  border: 2px solid;
+  margin: 1.6rem 0.4rem;
+  padding: 0.8rem 3.2rem;
+  transition: all 0.5s;
+}
+
+.btn--outline, .carousel__content .carousel__btn--outline {
+  border-color: #fff;
+  background-color: transparent;
+}
+.btn--outline:hover, .carousel__content .carousel__btn--outline:hover {
+  border-color: #8710d8;
+  background-color: #8710d8;
+}
+
+.btn--solid, .carousel__content .carousel__btn--solid {
+  border-color: #8710d8;
+  background-color: #8710d8;
+}
+.btn--solid:hover, .carousel__content .carousel__btn--solid:hover {
+  border-color: #fff;
+  background-color: transparent;
 }
 
 .header__top {
@@ -44,6 +63,9 @@ a {
 }
 
 .header__top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
@@ -71,6 +93,9 @@ a {
 }
 
 .header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
 }
@@ -85,6 +110,9 @@ a {
 }
 
 .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 0.14rem;
@@ -97,4 +125,41 @@ a {
 }
 .header__nav .nav__link:hover {
   color: #8710d8;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/carousel.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel__content .carousel__heading {
+  font-weight: 400;
+  font-size: 4.8rem;
+  letter-spacing: 0.48rem;
+  color: #fff;
+  margin-bottom: 0.96rem;
+}
+.carousel__dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+}
+.carousel__dots .carousel__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
