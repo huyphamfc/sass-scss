@@ -2,8 +2,10 @@
 $fs-default: 1.6rem;
 $fs-heading-primary: $fs-default * 2;
 $fs-heading-secondary: $fs-default * 3;
+$fs-heading-tertiary: $fs-default * 1.25;
 $fs-nav: $fs-default * 0.875;
 $fs-icon-small: $fs-default * 1.5;
+$fs-icon-large: $fs-default * 2.5;
 
 // Line Height
 $lh-default: 1.5;
@@ -13,6 +15,7 @@ $color-palette: #8710d8;
 $color-gray: #495057;
 $color-gray-tint: #fff;
 $color-gray-shade: #292b2c;
+$color-border: #cccccc;
 
 $color-icon-fb: #527dbd;
 $color-icon-tt: #1da1f2;

@@ -1,3 +1,7 @@
+.intro__item .intro__headingParagraph, .intro .intro__headingParagraph {
+  padding-bottom: 6.4rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,15 +29,19 @@ a {
   text-decoration: none;
 }
 
-.container, .carousel__content, .header__bottom, .header__top-content {
+.container, .intro, .carousel__content, .header__bottom, .header__top-content {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
 
+.grid, .intro .intro__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .btn, .carousel__content .carousel__btn {
   border: 2px solid;
-  margin: 1.6rem 0.4rem;
   padding: 0.8rem 3.2rem;
   transition: all 0.5s;
 }
@@ -143,9 +151,12 @@ a {
 .carousel__content .carousel__heading {
   font-weight: 400;
   font-size: 4.8rem;
-  letter-spacing: 0.48rem;
   color: #fff;
   margin-bottom: 0.96rem;
+  letter-spacing: 0.48rem;
+}
+.carousel__content .carousel__paragraph {
+  margin-bottom: 2.4rem;
 }
 .carousel__dots {
   display: flex;
@@ -162,4 +173,46 @@ a {
   height: 12px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.intro {
+  padding-top: 5.6rem;
+  padding-bottom: 3.6rem;
+  text-align: center;
+}
+.intro .intro__title::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 1px;
+  margin: auto;
+  background-color: #cccccc;
+}
+.intro .intro__heading {
+  font-weight: 400;
+  font-size: 4.8rem;
+  color: #292b2c;
+  margin-bottom: 0.96rem;
+}
+.intro .intro__items {
+  padding-top: 4.8rem;
+}
+
+.intro__item {
+  padding: 0 2.4rem;
+}
+.intro__item .intro__icon {
+  font-size: 4rem;
+  line-height: 1;
+  color: #8710d8;
+}
+.intro__item .intro__heading-sub {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #292b2c;
+  padding: 1.6rem 0;
+}
+.intro__item:nth-child(even) {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
 }/*# sourceMappingURL=main.css.map */

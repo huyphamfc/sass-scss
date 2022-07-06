@@ -30,3 +30,8 @@ a {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

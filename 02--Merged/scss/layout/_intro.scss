@@ -1,0 +1,52 @@
+.intro {
+  @extend .container;
+
+  @include padding-y(5.6rem, 3.6rem);
+  text-align: center;
+
+  .intro__title::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 1px;
+    margin: auto;
+    background-color: $color-border;
+  }
+
+  .intro__heading {
+    @include styleHeadingSecondary($color-gray-shade);
+  }
+
+  .intro__headingParagraph {
+    @extend %styleHeadingParagraph;
+  }
+
+  .intro__items {
+    @extend .grid;
+
+    padding-top: $fs-default * 3;
+  }
+}
+
+.intro__item {
+  padding: 0 $fs-default * 1.5;
+
+  .intro__headingParagraph {
+    @extend %styleHeadingParagraph;
+  }
+
+  .intro__icon {
+    font-size: $fs-icon-large;
+    line-height: 1;
+    color: $color-palette;
+  }
+
+  .intro__heading-sub {
+    @include styleHeadingTertiary($color-gray-shade);
+  }
+
+  &:nth-child(even) {
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+  }
+}

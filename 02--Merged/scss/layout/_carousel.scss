@@ -19,6 +19,12 @@
 
   .carousel__heading {
     @include styleHeadingSecondary();
+
+    letter-spacing: $fs-heading-secondary * 0.1;
+  }
+
+  .carousel__paragraph {
+    margin-bottom: $fs-default * 1.5;
   }
 
   .carousel__btn {

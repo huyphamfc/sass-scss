@@ -4,17 +4,23 @@
   align-items: $align-items;
 }
 
-@mixin padding-y($padding) {
-  padding-top: $padding;
-  padding-bottom: $padding;
+@mixin padding-y($padding-top, $padding-bottom: $padding-top) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
 }
 
 @mixin styleHeadingSecondary($color: $color-gray-tint) {
   font-weight: 400;
   font-size: $fs-heading-secondary;
-  letter-spacing: $fs-heading-secondary * 0.1;
   color: $color;
   margin-bottom: $fs-heading-secondary * 0.2;
+}
+
+@mixin styleHeadingTertiary($color: $color-gray-tint) {
+  font-weight: 500;
+  font-size: $fs-heading-tertiary;
+  color: $color;
+  padding: $fs-default 0;
 }
 
 @mixin styleIcon($fs-icon) {
