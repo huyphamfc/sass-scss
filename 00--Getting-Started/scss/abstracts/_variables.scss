@@ -1,1 +1,15 @@
+// Font Size
 $fs-base: 1.6rem;
+$fs-heading-primary: $fs-base * 3;
+$fs-heading-secondary: $fs-base * 2;
+$fs-heading-tertiary: $fs-base * 1.5;
+
+// Color
+$color-heading-medium: #ff0000;
+$color-heading-small: #0000ff;
+
+// Breakpoints
+$breakpoints: (
+  "medium": 48em,
+  "small": 36em,
+);

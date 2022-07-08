@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 * {
   box-sizing: border-box;
@@ -13,8 +14,33 @@ html {
 body {
   font-family: sans-serif;
   font-size: variables.$fs-base;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: variables.$fs-heading-primary;
+}
+
+h2 {
+  font-size: variables.$fs-heading-secondary;
+}
+
+h3 {
+  font-size: variables.$fs-heading-tertiary;
+}
+
+h1,
+h2,
+h3 {
+  @include mixins.responsive(medium) {
+    color: variables.$color-heading-medium;
+  }
+
+  @include mixins.responsive(small) {
+    color: variables.$color-heading-small;
+  }
 }

@@ -1,0 +1,7 @@
+@use "./variables";
+
+@mixin responsive($size) {
+  @media (max-width: map-get(variables.$breakpoints,$size)) {
+    @content;
+  }
+}
