@@ -1,0 +1,31 @@
+// Font Size
+$fs-base: 1.6rem;
+
+$fs-x-small: $fs-base * 0.8125;
+$fs-small: $fs-base * 0.875;
+$fs-large: $fs-base * 1.875;
+$fs-x-large: $fs-base * 2.5;
+
+$fs-heading-primary: $fs-base * 2.5;
+$fs-heading-secondary: $fs-base * 1.875;
+$fs-nav: $fs-base * 0.9375;
+$fs-button: $fs-base * 0.8125;
+
+// Font Weight
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// Colors
+$color-palette-dark: hsl(228, 39%, 23%);
+
+$color-accent-light: hsl(12, 88%, 59%);
+$color-accent-very-light: hsl(13, 100%, 96%);
+
+$color-neutral-dark: hsl(232, 12%, 13%);
+$color-neutral-very-dark: hsl(0, 0%, 0%);
+
+// Breakpoints
+$breakpoints: (
+  "medium": 50em,
+);
